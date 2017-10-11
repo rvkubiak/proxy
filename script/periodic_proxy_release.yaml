@@ -10,7 +10,5 @@ steps:
 - name: 'gcr.io/istio-io/istio-builder:0.1'
   args: [ './script/cloud_builder.sh', '-v', '$_VERSION', '-b', 'istio-builder-prototype' ]
   dir: 'proxy'
-options:
-  machineType: 'N1_STANDARD_8'
 
 timeout: 1800s
