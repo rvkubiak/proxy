@@ -19,10 +19,11 @@ TAG_NAME=""
 VERSION_OVERRIDE=""
 
 # Handle command line args
-while getopts b:i:t: arg ; do
+while getopts b:t:v: arg ; do
   case "${arg}" in
     b) BUCKET="${OPTARG}";;
     t) TAG_NAME="${OPTARG}";;
+    v) VERSION_OVERRIDE="${OPTARG}";;
     *) usage;;
   esac
 done
